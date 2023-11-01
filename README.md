@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Flexxible - NextJS Application
 
-## Getting Started
+Welcome to Flexxible, a powerful Next.js application that brings together an array of essential features to supercharge your web development experience. From user management with NextAuth to Google authentication, Graffbase GraphQL database management, JWT, Tailwind CSS, and TypeScript support, Flexxible has got it all covered.
 
-First, run the development server:
+## Features
+- **User Management**: Integrate user management effortlessly using NextAuth.
+- **Google Authentication**: Enable Google authentication for seamless access.
+- **Graffbase GraphQL**: Manage your database with Graffbase's GraphQL capabilities.
+- **JWT**: Utilize JSON Web Tokens for secure authentication and data exchange.
+- **Tailwind CSS**: Enhance your UI with the power of Tailwind CSS.
+- **TypeScript**: Benefit from strong typing and error-checking with TypeScript.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
+- [Node.js](https://nodejs.org/) installed on your machine.
+- [Directus](https://directus.io/) instance running as a backend.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Getting Started
+1. **Navigate to the project directory**:
+cd flexxible-nextjs
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Install the dependencies for the client and server**:
+cd client && npm install
+cd ../server && npm install
 
-## Learn More
+3. **Set up environment variables**:
+- Rename `.env.example` to `.env.local` in the `client` and `server` directories and configure the necessary environment variables.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the application**:
+- Start the client:
+  ```
+  cd client && npm run dev
+  ```
+- Start the server:
+  ```
+  cd server && npm run dev
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Restart your Directus instance** to ensure smooth integration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Now you're ready to experience the flexibility and power of Flexxible. Happy coding!
 
-## Deploy on Vercel
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to contribute, report issues, or suggest improvements. We welcome your creativity and insights to make Flexxible even more flexible!
