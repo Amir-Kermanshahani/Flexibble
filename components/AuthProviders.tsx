@@ -9,7 +9,7 @@ type Provider = {
   type: string;
   signinUrl: string;
   callbackUrl: string;
-  singinUrlParams: Record<string, string> | null;
+  singinUrlParams: Record<string, string> | undefined;
 };
 
 type Providers = Record<string, Provider>;
@@ -21,8 +21,6 @@ const AuthProviders = () => {
     const fetchProviders = async () => {
       const res = await getProviders();
 
-      console.log(res);
-
       setProviders(res);
     };
 
@@ -33,7 +31,11 @@ const AuthProviders = () => {
     return (
       <div>
         {Object.values(providers).map((provider: Provider, i) => (
-          <Button key={i} handleClick={() => signIn(provider?.id)} title="Sign In"/>
+          <Button
+            key={i}
+            title="Sign In"
+            handleClick={() => signIn(provider?.id)}
+          />
         ))}
       </div>
     );
