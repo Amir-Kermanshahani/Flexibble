@@ -2,6 +2,8 @@
 
 Welcome to Flexxible, a powerful Next.js application that brings together an array of essential features to supercharge your web development experience. From user management with NextAuth to Google authentication, Graffbase GraphQL database management, JWT, Tailwind CSS, and TypeScript support, Flexxible has got it all covered.
 
+#Live Version: https://flexibble-bay.vercel.app/
+
 ## Features
 - **User Management**: Integrate user management effortlessly using NextAuth.
 - **Google Authentication**: Enable Google authentication for seamless access.
