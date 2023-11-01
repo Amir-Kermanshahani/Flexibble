@@ -11,7 +11,7 @@ const User = g
     linkedInUrl: g.url().optional(),
     projects: g
       .relation(() => Project)
-      .list()
+      .list() 
       .optional(),
   })
   .auth((rules) => {
