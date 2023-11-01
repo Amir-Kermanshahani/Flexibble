@@ -9,13 +9,13 @@ type Provider = {
   type: string;
   signinUrl: string;
   callbackUrl: string;
-  singinUrlParams: Record<string, string> | null;
+  singinUrlParams: Record<string, string> ;
 };
 
-type Providers = Record<string, Provider>;
+type Providers = Record<string, Provider> | null;  
 
 const AuthProviders = () => {
-  const [providers, setProviders] = useState<Providers | null>(null);
+  const [providers, setProviders] = useState<Providers>(null);
 
   useEffect(() => {
     const fetchProviders = async () => {
