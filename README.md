@@ -21,22 +21,14 @@ cd flexxible-nextjs
 
 2. **Install the dependencies for the client and server**:
 cd client && npm install
-cd ../server && npm install
 
 3. **Set up environment variables**:
-- Rename `.env.example` to `.env.local` in the `client` and `server` directories and configure the necessary environment variables.
 
 4. **Run the application**:
 - Start the client:
   ```
   cd client && npm run dev
   ```
-- Start the server:
-  ```
-  cd server && npm run dev
-  ```
-
-5. **Restart your Directus instance** to ensure smooth integration.
 
 Now you're ready to experience the flexibility and power of Flexxible. Happy coding!
 
