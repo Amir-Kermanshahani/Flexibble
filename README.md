@@ -14,7 +14,6 @@ Welcome to Flexxible, a powerful Next.js application that brings together an arr
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) installed on your machine.
-- [Directus](https://directus.io/) instance running as a backend.
 
 ### Getting Started
 1. **Navigate to the project directory**:
